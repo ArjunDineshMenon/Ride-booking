@@ -1,0 +1,386 @@
+.login-header-button {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--pink);
+  white-space: nowrap;
+  padding: 7px 10px;
+  background: var(--pale);
+  border-radius: 6px;
+}
+.real-map {
+  isolation: isolate;
+}
+.leaflet-map {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #e6ece7;
+  font-family: inherit;
+}
+.leaflet-container a {
+  color: #567a65;
+}
+.leaflet-control-attribution {
+  font-size: 9px !important;
+  background: #fffffff0 !important;
+  padding: 3px 7px !important;
+  max-width: 100%;
+  line-height: 1.5;
+}
+.real-map-toolbar {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  right: 15px;
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.map-mode-control {
+  background: #fffffff5;
+  border: 1px solid #e0e5da;
+  border-radius: 8px;
+  display: flex;
+  padding: 3px;
+  box-shadow: 0 3px 12px #29332f12;
+}
+.map-mode-control button {
+  padding: 8px 9px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.map-mode-control button.selected {
+  background: #fff0f2;
+  color: var(--pink);
+}
+.map-mode-control .location-dot {
+  height: 8px;
+  width: 8px;
+}
+.india-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  background: #fffffff5;
+  border: 1px solid #e0e5da;
+  padding: 11px 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px #29332f12;
+  white-space: nowrap;
+}
+.real-map .map-controls,
+.real-map .map-layers {
+  z-index: 20;
+  bottom: 123px;
+}
+.real-map .map-availability {
+  z-index: 20;
+  bottom: 39px;
+}
+.roam-map-marker {
+  background: transparent;
+  border: 0;
+}
+.roam-map-marker > span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 34px;
+  border-radius: 14px 14px 14px 2px;
+  transform: rotate(-45deg);
+  font-weight: 700;
+  font-family: inherit;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px #29332f44;
+}
+.pin-pickup {
+  background: #ed4267;
+}
+.pin-dropoff {
+  background: #385c47;
+}
+.map-load-warning {
+  position: absolute;
+  top: 72px;
+  left: 15px;
+  right: 15px;
+  z-index: 20;
+  background: #fff8e9;
+  color: #9a7c37;
+  padding: 9px 11px;
+  border: 1px solid #eadab8;
+  border-radius: 7px;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.nationwide-search {
+  max-height: 340px;
+}
+.nationwide-search .search-india-button {
+  border-radius: 5px;
+  background: #fff0f2;
+  color: var(--pink);
+  font-size: 11px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.search-india-button small {
+  font-size: 8px !important;
+  color: #c58e9a !important;
+}
+.nationwide-search button.highlighted {
+  background: #f4f7ef;
+}
+.nationwide-search small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
+  white-space: nowrap;
+}
+.geocoder-credit {
+  font-size: 8px;
+  padding: 10px 7px;
+  border-top: 1px solid var(--line);
+  color: #a0a895;
+}
+.search-error {
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #bc6b70;
+}
+.route-estimate-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  margin-top: 13px;
+}
+.route-estimate-info > span {
+  font-size: 8px;
+  letter-spacing: 0.2px;
+  color: #939f87;
+}
+.route-estimate-info .text-button {
+  font-size: 9px;
+  white-space: nowrap;
+}
+.routing-warning {
+  border: 1px solid #eaddbd;
+  background: #fff8eb;
+  color: #9a7d42;
+  padding: 10px 12px;
+  font-size: 10px;
+  line-height: 1.7;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.vehicle-option:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.vehicle-option:disabled .vehicle-badge {
+  display: none;
+}
+.fare-summary {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  background: #f6f8f2;
+  padding: 13px;
+  border-radius: 10px;
+}
+.fare-summary .vehicle-art {
+  width: 85px;
+}
+.fare-summary h3 {
+  font-size: 15px;
+}
+.fare-summary p {
+  font-size: 10px;
+  color: #93a084;
+  margin-top: 7px;
+}
+.fare-rate {
+  padding: 17px 0;
+  font-size: 11px;
+  color: #81936f;
+  border-bottom: 1px solid var(--line);
+}
+.fare-breakdown-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+  font-size: 11px;
+  color: #8b9980;
+}
+.fare-breakdown-row strong {
+  font-size: 12px;
+  font-weight: 550;
+  color: #5f7550;
+}
+.fare-breakdown-row.total {
+  border-top: 1px solid var(--line);
+  padding: 20px 0;
+  color: #435a35;
+  font-weight: 600;
+  font-size: 14px;
+}
+.fare-breakdown-row.total strong {
+  font-size: 23px;
+}
+.tariff-disclosure {
+  font-size: 9px;
+  line-height: 1.8;
+  color: #a1ab96;
+}
+.auth-method-tabs {
+  margin-bottom: 23px;
+}
+.auth-method-tabs button {
+  flex: 1;
+  font-size: 11px;
+}
+.development-auth-note {
+  display: flex;
+  gap: 10px;
+  padding: 13px;
+  border: 1px solid #eadbbf;
+  background: #fff9ed;
+  border-radius: 9px;
+  color: #b09261;
+  font-size: 10px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.development-auth-note strong {
+  display: block;
+  font-size: 11px;
+  color: #9d7d48;
+  margin-bottom: 5px;
+}
+.phone-number-input {
+  display: flex;
+  align-items: center;
+  background: #fafbf7;
+  border: 1px solid #e1e7d8;
+  border-radius: 7px;
+}
+.phone-number-input > span {
+  padding: 0 13px;
+  border-right: 1px solid #e1e7d8;
+  font-size: 13px;
+  color: #71875e;
+}
+.phone-number-input > input {
+  border: 0;
+  background: transparent;
+  min-width: 0;
+}
+.development-code {
+  text-align: center;
+  border: 1px dashed #debc84;
+  border-radius: 9px;
+  padding: 20px;
+  background: #fff9ed;
+}
+.development-code > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #ae946c;
+  display: block;
+}
+.development-code > strong {
+  display: block;
+  font-size: 34px;
+  letter-spacing: 9px;
+  font-weight: 600;
+  margin: 12px 0;
+  color: #93723e;
+}
+.development-code > small {
+  color: #b19d7c;
+  font-size: 10px;
+}
+.phone-login .text-button:disabled {
+  cursor: not-allowed;
+}
+.modal .location-field {
+  border: 1px solid #e1e7d8;
+  border-radius: 7px;
+  min-height: 70px;
+}
+.modal .nationwide-search {
+  max-height: 200px;
+}
+.modal:has(.nationwide-search) {
+  overflow: visible;
+}
+.city-select {
+  max-width: 190px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 620px) {
+  .real-map-toolbar {
+    top: 12px;
+    left: 10px;
+    right: 10px;
+    gap: 5px;
+  }
+  .map-mode-control button {
+    font-size: 9px;
+    padding: 8px 7px;
+  }
+  .india-button {
+    font-size: 9px;
+    padding: 11px 8px;
+    gap: 4px;
+  }
+  .map-mode-control {
+    padding: 3px;
+  }
+  .map-load-warning {
+    font-size: 9px;
+  }
+  .login-header-button {
+    font-size: 9px;
+    padding: 6px;
+  }
+  .topbar-actions {
+    gap: 10px;
+  }
+  .city-select {
+    max-width: 100px;
+    font-size: 9px;
+  }
+  .leaflet-control-attribution {
+    font-size: 7px !important;
+  }
+  .real-map {
+    height: 450px;
+  }
+  .modal:has(.nationwide-search) {
+    overflow: auto;
+  }
+  .modal .location-field {
+    margin-bottom: 180px;
+  }
+  .modal .nationwide-search {
+    max-height: 180px;
+  }
+  .route-estimate-info > span {
+    font-size: 7px;
+  }
+}

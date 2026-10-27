@@ -1,0 +1,24 @@
+{
+  "currency": "INR",
+  "version": "2026-10-27",
+  "platform_fee": 5,
+  "airport_fee": 60,
+  "zones": [
+    {"name":"Bengaluru","lat":12.9716,"lng":77.5946,"multiplier":1.0},
+    {"name":"Mumbai","lat":19.0760,"lng":72.8777,"multiplier":1.15},
+    {"name":"Delhi NCR","lat":28.6139,"lng":77.2090,"multiplier":1.1},
+    {"name":"Chennai","lat":13.0827,"lng":80.2707,"multiplier":1.0},
+    {"name":"Hyderabad","lat":17.3850,"lng":78.4867,"multiplier":0.95},
+    {"name":"Kolkata","lat":22.5726,"lng":88.3639,"multiplier":0.9},
+    {"name":"Pune","lat":18.5204,"lng":73.8567,"multiplier":1.0},
+    {"name":"Ahmedabad","lat":23.0225,"lng":72.5714,"multiplier":0.9},
+    {"name":"Jaipur","lat":26.9124,"lng":75.7873,"multiplier":0.85},
+    {"name":"Lucknow","lat":26.8467,"lng":80.9462,"multiplier":0.85}
+  ],
+  "vehicles": {
+    "bike":{"base":20,"per_km":8,"per_minute":0.3,"minimum":35,"max_km":35},
+    "auto":{"base":32,"per_km":12,"per_minute":0.4,"minimum":50,"max_km":60},
+    "mini":{"base":48,"per_km":17,"per_minute":0.5,"minimum":85,"intercity_per_km":14,"intercity_minimum":300},
+    "sedan":{"base":68,"per_km":22,"per_minute":0.65,"minimum":120,"intercity_per_km":18,"intercity_minimum":400}
+  }
+}

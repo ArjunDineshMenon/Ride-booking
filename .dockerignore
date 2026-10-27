@@ -1,0 +1,13 @@
+.git
+.venv
+node_modules
+dist
+artifacts
+__pycache__
+.pytest_cache
+**/*.db
+**/*-wal
+**/*-shm
+**/.env
+.env.local
+**/*service-account*.json
